@@ -11,6 +11,10 @@
 cmake_minimum_required(VERSION 3.10)
 project(VideoVisualization)
 
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(CMAKE_INSTALL_RPATH "/usr/lib:/usr/local/lib")
+
+
 # Find OpenCV
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
